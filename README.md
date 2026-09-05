@@ -38,8 +38,8 @@ Additional email templates can be added to the `screenshots/` directory and docu
 .
 ├── README.md
 ├── screenshots/
-│   ├── order-confirmation.png
-│   ├── order-shipped.png
+│   ├── completed_order.png
+│   ├── cancelled_order.png
 │   └── ...
 └── templates/
     └── ...
