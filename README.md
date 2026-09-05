@@ -26,7 +26,7 @@ The customised order confirmation email provides customers with a clear summary 
 
 Customised shipping notification email.
 
-![Order Cancelled Email](screenshots/canceller_order.png)
+![Order Cancelled Email](screenshots/cancelled_order.png)
 
 ### Other Templates
 
