@@ -20,13 +20,13 @@ The templates have been modified to provide:
 
 The customised order confirmation email provides customers with a clear summary of their order and relevant information.
 
-![Order Confirmation Email](screenshots/order-confirmation.png)
+![Order Completed Email](screenshots/completed_order.png)
 
 ### Order Shipped
 
 Customised shipping notification email.
 
-![Order Shipped Email](screenshots/order-shipped.png)
+![Order Cancelled Email](screenshots/canceller_order.png)
 
 ### Other Templates
 
