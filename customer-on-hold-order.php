@@ -54,7 +54,7 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
                                             <td align="center" style="padding: 18px 20px 24px;">
                                               <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
-                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php esc_html_e('Thanks for your order. It’s on-hold until we confirm that payment has been received.', 'e-mail-strings'); ?></td>
+                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php printf( esc_html__( 'Thank you for your order. Order #%s is currently on hold while we confirm receipt of payment. We will notify you as soon as it has been verified and your order moves into processing.', 'e-mail-strings' ), esc_html( $order->get_order_number() ) ); ?></td>
                                                 </tr>
                                               </table>
                                             </td>

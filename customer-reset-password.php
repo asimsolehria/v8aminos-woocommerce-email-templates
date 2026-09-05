@@ -55,7 +55,7 @@ if (!defined('ABSPATH')) {
                                               <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
 												
-                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php printf(esc_html__('Someone has requested a new password for the following account on %s:', 'woocommerce'), esc_html(wp_specialchars_decode(get_option('blogname'), ENT_QUOTES))); ?>
+                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php printf(esc_html__('We received a request to reset the password for your account on %s. Your account details are below:', 'woocommerce'), esc_html(wp_specialchars_decode(get_option('blogname'), ENT_QUOTES))); ?>
 												</td>
 												
 												
@@ -85,7 +85,7 @@ if (!defined('ABSPATH')) {
                                               <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
 												
-                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php esc_html_e('If you didn\'t make this request, just ignore this email. If you\'d like to proceed:', 'woocommerce'); ?>
+                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php esc_html_e('If you did not make this request, no further action is required and your password will remain unchanged. To proceed with resetting your password, please click the button below:', 'woocommerce'); ?>
 												</td>
 												
 												

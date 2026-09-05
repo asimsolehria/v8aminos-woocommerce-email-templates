@@ -56,7 +56,7 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
                                             <td align="center" style="padding: 18px 20px 24px;">
                                               <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
-                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php printf( esc_html__( 'Just to let you know &mdash; we\'ve received your order #%s, and it is now being processed:', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></td>
+                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php printf( esc_html__( 'Thank you for your order. We have received order #%s, and our team is now preparing it for fulfillment. You will receive a further update once it has shipped.', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></td>
                                                 </tr>
                                               </table>
                                             </td>
@@ -144,3 +144,17 @@ do_action('woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text, $
  * @hooked WC_Emails::email_footer() Output the email footer
  */
 do_action('woocommerce_email_footer', $email);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -51,7 +51,7 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
                                               <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
 												
-                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php printf(esc_html__('Thanks for creating an account on %1$s. Your username is %2$s. You can access your account area to view orders, change your password, and more at:', 'woocommerce'), esc_html($blogname), '<strong>' . esc_html($user_login) . '</strong>'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php printf(esc_html__('Welcome to %1$s. Your account has been created successfully, and your username is %2$s. You may sign in at any time to review your order history, manage your details, and update your password using the link below:', 'woocommerce'), esc_html($blogname), '<strong>' . esc_html($user_login) . '</strong>'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
                     ?>
 												</td>
 												

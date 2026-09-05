@@ -55,7 +55,7 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
                                             <td align="center" style="padding: 18px 20px 24px;">
                                               <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
-                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php esc_html_e('The following note has been added to your order:', 'e-mail-strings'); ?></td>
+                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php esc_html_e('A member of our team has added the following note to your order:', 'e-mail-strings'); ?></td>
                                                 </tr>
                                               </table>
                                             </td>
@@ -76,7 +76,7 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
                                             <td align="center" style="padding: 18px 20px 24px;">
                                               <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
-                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php esc_html_e('As a reminder, here are your order details:', 'e-mail-strings'); ?></td>
+                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php esc_html_e('For your reference, a summary of your order is included below:', 'e-mail-strings'); ?></td>
                                                 </tr>
                                               </table>
                                             </td>

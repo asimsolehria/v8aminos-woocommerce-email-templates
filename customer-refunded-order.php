@@ -58,10 +58,10 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
                                                   <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php
 									if ($partial_refund) {
 										/* translators: %s: Site title */
-										printf(esc_html__('Your order on %s has been partially refunded. There are more details below for your reference:', 'e-mail-strings'), wp_specialchars_decode(get_option('blogname'), ENT_QUOTES)); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+										printf(esc_html__('We would like to confirm that a partial refund has been processed for your order on %s. Please find the updated order details below for your reference:', 'e-mail-strings'), wp_specialchars_decode(get_option('blogname'), ENT_QUOTES)); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 									} else {
 										/* translators: %s: Site title */
-										printf(esc_html__('Your order on %s has been refunded. There are more details below for your reference:', 'e-mail-strings'), wp_specialchars_decode(get_option('blogname'), ENT_QUOTES)); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+										printf(esc_html__('We would like to confirm that your order on %s has been fully refunded. Please find the order details below for your reference:', 'e-mail-strings'), wp_specialchars_decode(get_option('blogname'), ENT_QUOTES)); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 									}
 									?></td>
                                                 </tr>

@@ -57,7 +57,7 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
                                                   <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php /* translators: %1$s: Order number. %2$s: Customer full name. */ ?>
 												  <p><?php /* translators: %1$s: Order number. %2$s: Customer full name. */ ?>
 <p><?php /* translators: %s: Customer billing full name */ ?>
-								<p><?php printf(esc_html__('You’ve received the following order from %s:', 'e-mail-strings'), $order->get_formatted_billing_full_name()); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+								<p><?php printf(esc_html__('A new order has been placed by %s. The full order details are provided below:', 'e-mail-strings'), $order->get_formatted_billing_full_name()); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
 									?> </td>
                                                 </tr>
                                               </table>
@@ -101,4 +101,4 @@ do_action('woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text, $
 /*
  * @hooked WC_Emails::email_footer() Output the email footer
  */
-do_action('woocommerce_email_footer',);
+do_action('woocommerce_email_footer', $email);

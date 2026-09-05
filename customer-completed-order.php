@@ -55,7 +55,7 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
                                               <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
                                                   <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;">
-												  Great news! Your order #<?php echo $order->get_order_number(); ?> has left the lab and is now on its way to you.	
+												  Your order #<?php echo $order->get_order_number(); ?> has left our lab and is now on its way to you. Thank you for your patience while it was prepared.	
 												 
 												  </td>
                                                 </tr>

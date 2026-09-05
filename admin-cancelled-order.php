@@ -55,7 +55,7 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
                                             <td align="center" style="padding: 18px 20px 24px;">
                                               <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
-                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php printf(esc_html__('Notification to let you know &mdash; order #%1$s belonging to %2$s has been cancelled:', 'e-mail-strings'), esc_html($order->get_order_number()), esc_html($order->get_formatted_billing_full_name())); ?> </td>
+                                                  <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php printf(esc_html__('This is to notify you that order #%1$s, placed by %2$s, has been cancelled. Details are provided below:', 'e-mail-strings'), esc_html($order->get_order_number()), esc_html($order->get_formatted_billing_full_name())); ?> </td>
                                                 </tr>
                                               </table>
                                             </td>

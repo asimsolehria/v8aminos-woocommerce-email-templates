@@ -55,7 +55,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
                                               <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                 <tr>
                                                   <td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php /* translators: %1$s: Order number. %2$s: Customer full name. */ ?>
-												  <p><?php printf( esc_html__( 'Payment for order #%1$s from %2$s has failed. The order was as follows:', 'e-mail-strings' ), esc_html( $order->get_order_number() ), esc_html( $order->get_formatted_billing_full_name() ) ); ?> </td>
+												  <p><?php printf( esc_html__( 'Payment for order #%1$s from %2$s could not be processed. The order details are provided below for your review:', 'e-mail-strings' ), esc_html( $order->get_order_number() ), esc_html( $order->get_formatted_billing_full_name() ) ); ?> </td>
                                                 </tr>
                                               </table>
                                             </td>

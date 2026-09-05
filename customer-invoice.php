@@ -64,7 +64,7 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
 										printf(
 											wp_kses(
 												/* translators: %1$s Site title, %2$s Order pay link */
-												__('An order has been created for you on %1$s. Your invoice is below, with a link to make payment when you’re ready: %2$s', 'e-mail-strings'),
+												__('Your invoice from %1$s is ready. Please find the order summary below, along with a secure link to complete payment at your convenience: %2$s', 'e-mail-strings'),
 												array(
 													'a' => array(
 														'href' => array(),
@@ -72,14 +72,14 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
 												)
 											),
 											esc_html(get_bloginfo('name', 'display')),
-											'<a href="' . esc_url($order->get_checkout_payment_url()) . '">' . esc_html__('Pay for this order', 'e-mail-strings') . '</a>'
+											'<a href="' . esc_url($order->get_checkout_payment_url()) . '">' . esc_html__('Complete payment', 'e-mail-strings') . '</a>'
 										);
 										?>
 												</td>
 												<?php } else { ?>
 												<td class="p-text" align="center" style="width: 460px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 18px; line-height: 23px; font-weight: 400; text-transform: none; mso-line-height-rule: exactly; color: #ffffff;"><?php
 										/* translators: %s Order date */
-										printf(esc_html__('Here are the details of your order placed on %s:', 'e-mail-strings'), esc_html(wc_format_datetime($order->get_date_created())));
+										printf(esc_html__('For your records, please find the details of your order placed on %s below:', 'e-mail-strings'), esc_html(wc_format_datetime($order->get_date_created())));
 										?>
 												</td>
 												<?php
