@@ -168,6 +168,25 @@ if (!defined('ABSPATH')) {
         -webkit-border-radius: 16px !important;
         -moz-border-radius: 16px !important;
       }
+      /* V8 Aminos brand: fallback for raw/unstyled content injected by
+         third-party plugins (e.g. payment gateway instructions) that don't
+         carry their own font/color styling. Keeps everything readable
+         against the dark background without editing plugin files directly. */
+      .stylingblock-content-wrapper p {
+        font-family: 'Inter', Arial, Helvetica, sans-serif !important;
+        color: #ffffff !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-align: center !important;
+        margin: 0 0 14px 0 !important;
+      }
+      .stylingblock-content-wrapper p a {
+        color: #329DF8 !important;
+        text-decoration: none !important;
+      }
+      .stylingblock-content-wrapper p strong {
+        color: #ffffff !important;
+      }
       @media only screen and (max-width: 639px) {
 
 		.head-text{
